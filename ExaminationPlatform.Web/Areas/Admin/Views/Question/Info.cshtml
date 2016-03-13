@@ -1,0 +1,20 @@
+﻿@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "试题编辑";
+}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3" id="typesList">
+        </div>
+        <div class="col-md-9" id="questionEditor">
+        </div>
+    </div>
+</div>
+@section Styles{
+    <link href="/Content/component/alloy-editor/assets/alloy-editor-atlas-min.css" rel="stylesheet" />
+}
+@section Scripts{
+    <script src="/Content/component/alloy-editor/alloy-editor-all-min.js"></script>
+    <script src="/Content/component/react-question.js"></script>
+    <script src="/Content/js/admin/question_info.js"></script>
+}

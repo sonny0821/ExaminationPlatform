@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D0B92F52-83A0-428A-8394-BB57624B5B97}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExaminationPlatform.Web</RootNamespace>
+    <AssemblyName>ExaminationPlatform.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClearScript">
+      <HintPath>..\packages\JavaScriptEngineSwitcher.V8.1.2.4\lib\net40\ClearScript.dll</HintPath>
+    </Reference>
+    <Reference Include="JavaScriptEngineSwitcher.Core">
+      <HintPath>..\packages\JavaScriptEngineSwitcher.Core.1.2.4\lib\net40\JavaScriptEngineSwitcher.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="JavaScriptEngineSwitcher.Msie">
+      <HintPath>..\packages\JavaScriptEngineSwitcher.Msie.1.2.4\lib\net40\JavaScriptEngineSwitcher.Msie.dll</HintPath>
+    </Reference>
+    <Reference Include="JavaScriptEngineSwitcher.V8">
+      <HintPath>..\packages\JavaScriptEngineSwitcher.V8.1.2.4\lib\net40\JavaScriptEngineSwitcher.V8.dll</HintPath>
+    </Reference>
+    <Reference Include="JSPool">
+      <HintPath>..\packages\JSPool.0.3.1\lib\net40-Client\JSPool.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MsieJavaScriptEngine">
+      <HintPath>..\packages\MsieJavaScriptEngine.1.5.1\lib\net40\MsieJavaScriptEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="React.Core">
+      <HintPath>..\packages\React.Core.2.1.2\lib\net40\React.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="React.Web">
+      <HintPath>..\packages\React.Web.2.1.2\lib\net40\React.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="React.Web.Mvc4">
+      <HintPath>..\packages\React.Web.Mvc4.2.1.2\lib\net40\React.Web.Mvc4.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="VroomJs">
+      <HintPath>..\packages\React.Core.2.1.2\lib\net40\VroomJs.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivatorEx">
+      <HintPath>..\packages\WebActivatorEx.2.0.5\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\ReactConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\ManageController.cs" />
+    <Compile Include="Areas\Admin\Controllers\PaperController.cs" />
+    <Compile Include="Areas\Admin\Controllers\QuestionController.cs" />
+    <Compile Include="Controllers\WebAPI\BaseAPIController.cs" />
+    <Compile Include="Controllers\WebAPI\QuestionController.cs" />
+    <Compile Include="Controllers\WebAPI\QuestionPoolController.cs" />
+    <Compile Include="Controllers\WebAPI\QuestionTypeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Admin\Views\Paper\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Paper\Plan.cshtml" />
+    <Content Include="Areas\Admin\Views\Paper\Template.cshtml" />
+    <None Include="ClearScript.V8\ClearScriptV8-32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ClearScript.V8\ClearScriptV8-64.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ClearScript.V8\v8-ia32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ClearScript.V8\v8-x64.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="Content\component\alloy-editor\alloy-editor-all-min.js" />
+    <Content Include="Content\component\alloy-editor\assets\alloy-editor-atlas-min.css" />
+    <Content Include="Content\component\alloy-editor\assets\alloy-editor-atlas.css" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\ar.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\az.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\be_BY.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\bg.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\bs.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\ca.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\cs.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\cy.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\da.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\de.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\el.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\en.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\es.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\et.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\fa.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\fi.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\fr.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\he.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\hr.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\hu.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\hy.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\id.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\it.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\ja.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\ka.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\kk.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\km.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\ko.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\ku_IQ.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\lt.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\lv.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\ms.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\nl.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\pl.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\pt_BR.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\ro.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\ru.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\sk.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\sq.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\sr.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\sv.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\th_TH.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\tr.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\uk_UA.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\vi.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\zh_CN.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\i18n\zh_TW.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\jquery.plupload.queue\css\jquery.plupload.queue.css" />
+    <Content Include="Content\component\plupload-2.1.8\js\jquery.plupload.queue\img\backgrounds.gif" />
+    <Content Include="Content\component\plupload-2.1.8\js\jquery.plupload.queue\img\buttons-disabled.png" />
+    <Content Include="Content\component\plupload-2.1.8\js\jquery.plupload.queue\img\buttons.png" />
+    <Content Include="Content\component\plupload-2.1.8\js\jquery.plupload.queue\img\delete.gif" />
+    <Content Include="Content\component\plupload-2.1.8\js\jquery.plupload.queue\img\done.gif" />
+    <Content Include="Content\component\plupload-2.1.8\js\jquery.plupload.queue\img\error.gif" />
+    <Content Include="Content\component\plupload-2.1.8\js\jquery.plupload.queue\img\throbber.gif" />
+    <Content Include="Content\component\plupload-2.1.8\js\jquery.plupload.queue\img\transp50.png" />
+    <Content Include="Content\component\plupload-2.1.8\js\jquery.plupload.queue\jquery.plupload.queue.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\jquery.plupload.queue\jquery.plupload.queue.min.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\jquery.ui.plupload\css\jquery.ui.plupload.css" />
+    <Content Include="Content\component\plupload-2.1.8\js\jquery.ui.plupload\img\loading.gif" />
+    <Content Include="Content\component\plupload-2.1.8\js\jquery.ui.plupload\img\plupload.png" />
+    <Content Include="Content\component\plupload-2.1.8\js\jquery.ui.plupload\jquery.ui.plupload.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\jquery.ui.plupload\jquery.ui.plupload.min.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\moxie.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\moxie.min.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\Moxie.swf" />
+    <Content Include="Content\component\plupload-2.1.8\js\Moxie.xap" />
+    <Content Include="Content\component\plupload-2.1.8\js\plupload.dev.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\plupload.full.min.js" />
+    <Content Include="Content\component\plupload-2.1.8\js\plupload.min.js" />
+    <Content Include="Content\css\admin\common.css" />
+    <Content Include="Content\css\layout.css" />
+    <Content Include="Content\js\admin\paper_index.js" />
+    <Content Include="Content\js\admin\paper_plan.js" />
+    <Content Include="Content\js\admin\paper_template.js" />
+    <Content Include="Content\js\admin\question_info.js" />
+    <Content Include="Content\js\admin\question_index.js" />
+    <Content Include="Content\component\react-question.js" />
+    <Content Include="Content\js\common.js" />
+    <Content Include="Content\js\lightning.js" />
+    <Content Include="Content\js\portal\introduction.js" />
+    <Content Include="Content\js\portal\paper.js" />
+    <Content Include="Content\component\react-extend.js" />
+    <Content Include="Content\lib\bootstrap-3.3.5-dist\css\bootstrap-theme.css" />
+    <Content Include="Content\lib\bootstrap-3.3.5-dist\css\bootstrap-theme.min.css" />
+    <Content Include="Content\lib\bootstrap-3.3.5-dist\css\bootstrap.css" />
+    <Content Include="Content\lib\bootstrap-3.3.5-dist\css\bootstrap.min.css" />
+    <Content Include="Content\lib\bootstrap-3.3.5-dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\lib\bootstrap-3.3.5-dist\js\bootstrap.js" />
+    <Content Include="Content\lib\bootstrap-3.3.5-dist\js\bootstrap.min.js" />
+    <Content Include="Content\lib\bootstrap-3.3.5-dist\js\npm.js" />
+    <Content Include="Content\lib\jquery-2.1.4\jquery-2.1.4.js" />
+    <Content Include="Content\lib\jquery-2.1.4\jquery-2.1.4.min.js" />
+    <Content Include="Content\lib\react-0.14.3\react-dom-server.js" />
+    <Content Include="Content\lib\react-0.14.3\react-dom-server.min.js" />
+    <Content Include="Content\lib\react-0.14.3\react-dom.js" />
+    <Content Include="Content\lib\react-0.14.3\react-dom.min.js" />
+    <Content Include="Content\lib\react-0.14.3\react-with-addons.js" />
+    <Content Include="Content\lib\react-0.14.3\react-with-addons.min.js" />
+    <Content Include="Content\lib\react-0.14.3\react.js" />
+    <Content Include="Content\lib\react-0.14.3\react.min.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Content\component\alloy-editor\assets\fonts\alloyeditor-atlas.eot" />
+    <Content Include="Content\component\alloy-editor\assets\fonts\alloyeditor-atlas.ttf" />
+    <Content Include="Content\component\alloy-editor\assets\fonts\alloyeditor-atlas.woff" />
+    <Content Include="Content\component\alloy-editor\assets\fonts\alloyeditor-default.eot" />
+    <Content Include="Content\component\alloy-editor\assets\fonts\alloyeditor-default.ttf" />
+    <Content Include="Content\component\alloy-editor\assets\fonts\alloyeditor-default.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Models\" />
+    <Folder Include="Views\Shared\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ExaminationPlatform.Center\ExaminationPlatform.Center.csproj">
+      <Project>{3f53ba29-8b37-4ace-8143-1e30da3be28d}</Project>
+      <Name>ExaminationPlatform.Center</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExaminationPlatform.Entities\ExaminationPlatform.Entities.csproj">
+      <Project>{c31e56be-2cda-4652-8cde-70052ed809b0}</Project>
+      <Name>ExaminationPlatform.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QuestionUnit.Base\QuestionUnit.Base.csproj">
+      <Project>{c02c125b-5dd5-4e01-ac6b-1d5a878e10ea}</Project>
+      <Name>QuestionUnit.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QuestionUnit.Extend\QuestionUnit.Extend.csproj">
+      <Project>{07e0df27-06f4-4cfe-bc5f-e2707b309e73}</Project>
+      <Name>QuestionUnit.Extend</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UCADB\UCADB.csproj">
+      <Project>{80baa0c9-874e-4932-a799-d8e01e5da2d1}</Project>
+      <Name>UCADB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Admin\Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\lib\bootstrap-3.3.5-dist\css\bootstrap-theme.css.map" />
+    <Content Include="Content\lib\bootstrap-3.3.5-dist\css\bootstrap.css.map" />
+    <Content Include="Content\lib\bootstrap-3.3.5-dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\lib\bootstrap-3.3.5-dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\lib\bootstrap-3.3.5-dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\lib\bootstrap-3.3.5-dist\fonts\glyphicons-halflings-regular.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Admin\Views\Question\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Admin\Views\Question\Info.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Admin\Views\Manage\Login.cshtml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11265</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:11265/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

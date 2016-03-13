@@ -1,0 +1,9 @@
+E:\Projects\Visual Studio 2013\Projects\ExamPlatformWeb-Master\TF\bin\Debug\TooFuns.Framework.dll
+E:\Projects\Visual Studio 2013\Projects\ExamPlatformWeb-Master\TF\bin\Debug\TooFuns.Framework.pdb
+E:\Projects\Visual Studio 2013\Projects\ExamPlatformWeb-Master\TF\obj\Debug\TooFuns.Framework.dll
+E:\Projects\Visual Studio 2013\Projects\ExamPlatformWeb-Master\TF\obj\Debug\TooFuns.Framework.pdb
+E:\Projects\Visual Studio 2013\Projects\ExamPlatformWeb-Master\TF\obj\Debug\TooFuns.Framework.csprojResolveAssemblyReference.cache
+E:\MyProjects\ExaminationPlatform\TF\bin\Debug\TooFuns.Framework.dll
+E:\MyProjects\ExaminationPlatform\TF\bin\Debug\TooFuns.Framework.pdb
+E:\MyProjects\ExaminationPlatform\TF\obj\Debug\TooFuns.Framework.dll
+E:\MyProjects\ExaminationPlatform\TF\obj\Debug\TooFuns.Framework.pdb

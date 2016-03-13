@@ -1,0 +1,46 @@
+﻿
+body {
+    margin: 0;
+    font-family: "Microsoft YaHei UI","Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    background-color: #252830;
+    font-weight: 300;
+    letter-spacing: 0;
+    height: 100%;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+.main-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 100%;
+}
+
+.page-content {
+    position: relative;
+    min-height: 1px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.content-container {
+    padding-top: 20px;
+}
+
+    .content-container .content-title {
+        min-height: 50px;
+    }
+
+    .content-container .content {
+        background-color: #eee;
+        color: #000;
+        border-radius: 5px;
+        min-height: 700px;
+        padding: 10px;
+    }

@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UCADB</name>
+    </assembly>
+    <members>
+        <member name="M:UCADB.DatabaseOperator.ExecuteNonQuery(System.String@,System.Int32@,System.String@)">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:UCADB.TableOperator">
+            <summary>
+            数据库操作类
+            </summary>
+        </member>
+        <member name="M:UCADB.TableOperator.#ctor">
+            <summary>
+            ctor.
+            </summary>
+        </member>
+        <member name="M:UCADB.TableOperator.#ctor(UCADB.DataBaseActivator)">
+            <summary>
+            ctor.
+            </summary>
+            <param name="currentDba">新数据库库操作激活器</param>
+        </member>
+        <member name="M:UCADB.TableOperator.ExecuteNonQuery(System.Boolean,System.String,System.Object[],System.String)">
+            <summary>
+            Sql无返回操作
+            </summary>
+            <param name="isProc">是否存储过程</param>
+            <param name="procname">sql语句或存储过程名</param>
+            <param name="prms">参数表（按顺序）</param>
+            <param name="connStr">连接名</param>
+            <returns>返回是否执行成功</returns>
+        </member>
+        <member name="M:UCADB.TableOperator.ExecuteNonQuery(System.Boolean,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Sql无返回操作
+            </summary>
+            <param name="isProc">是否存储过程</param>
+            <param name="procname">sql语句或存储过程名</param>
+            <param name="connStr">连接名</param>
+            <param name="keyPrms">参数表（按key）</param>
+            <returns></returns>
+        </member>
+        <member name="M:UCADB.TableOperator.ExecuteNonQuery(System.Boolean,System.String,System.String)">
+            <summary>
+            Sql无返回操作
+            </summary>
+            <param name="isProc">是否存储过程</param>
+            <param name="procname">sql语句或存储过程名</param>
+            <param name="connStr">连接名</param>
+            <returns></returns>
+        </member>
+        <member name="M:UCADB.TableOperator.ReturnDS(System.Boolean,System.String@,System.String,System.Object[],System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.DataSet@,System.String)">
+            <summary>
+            返回数据集
+            </summary>
+            <param name="isProc">是否存储过程，否则为sql语句</param>
+            <param name="Ex">返回值，如果成功为ok</param>
+            <param name="procname">存储过程名/sql语句</param>
+            <param name="prms">参数表，可为null</param>
+            <param name="keyPrms">参数KV表，可为null</param>
+            <param name="ds">需要返回的数据集</param>
+            <param name="connStr">连接名</param>
+            <returns></returns>
+        </member>
+        <member name="M:UCADB.TableOperator.ReturnDS(System.Boolean,System.String,System.Object[],System.String)">
+            <summary>
+            返回DataSet
+            </summary>
+            <param name="isProc">是否存储过程</param>
+            <param name="procname">存储过程名或sql语句</param>
+            <param name="prms">参数表</param>
+            <param name="connStr">连接名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:UCADB.TableOperator.ReturnDS(System.Boolean,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            返回DataSet
+            </summary>
+            <param name="isProc">是否存储过程</param>
+            <param name="procname">存储过程名或sql语句</param>
+            <param name="connStr">连接名称</param>
+            <param name="prms">参数KV表，可为null</param>
+            <returns></returns>
+        </member>
+        <member name="M:UCADB.TableOperator.InsertER``1(``0,System.String,System.String,System.String[])">
+            <summary>
+            插入一个实体
+            </summary>
+            <typeparam name="T">实体类型</typeparam>
+            <param name="entity">实体对象</param>
+            <param name="tableName">表名</param>
+            <param name="connName">连接名</param>
+            <param name="insertIgnoreColumns">插入忽略字段</param>
+            <returns></returns>
+        </member>
+        <member name="M:UCADB.TableOperator.GetER``1(System.String,System.String,System.String,System.String)">
+            <summary>
+            获取实体
+            </summary>
+            <typeparam name="T">实体类型</typeparam>
+            <param name="PK_ID">主键</param>
+            <param name="idField">主键字段名</param>
+            <param name="tableName">表名</param>
+            <param name="connName">连接名</param>
+            <returns></returns>
+        </member>
+        <member name="M:UCADB.TableOperator.GetER``1(System.String,System.String)">
+            <summary>
+            获取实体
+            </summary>
+            <typeparam name="T">实体类型</typeparam>
+            <param name="SQL">SQL，返回第一行的实体</param>
+            <param name="connName">连接名</param>
+            <returns></returns>
+        </member>
+        <member name="M:UCADB.TableOperator.GetAllER``1(System.String,System.String)">
+            <summary>
+            获取实体列表
+            </summary>
+            <typeparam name="T">实体类型</typeparam>
+            <param name="SQL">SQL，返回所有行的实体列表</param>
+            <param name="connName">连接名</param>
+            <returns></returns>
+        </member>
+        <member name="M:UCADB.TableOperator.GetAllER``1(System.Boolean,System.String,System.Object,System.String)">
+            <summary>
+            获取实体列表
+            </summary>
+            <typeparam name="T">实体类型</typeparam>
+            <param name="isProc">是否存储过程</param>
+            <param name="SQL">SQL语句</param>
+            <param name="prms">参数，应为dictionary[string,object]或object[]</param>
+            <param name="connName">连接名称</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

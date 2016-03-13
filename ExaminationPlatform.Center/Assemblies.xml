@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Assemblies>
+  <Question path="bin\QuestionUnit.Base.dll">
+    <Relation level="1" questionName="单选题" questionType="1">QuestionUnit.Base.RadioUnit</Relation>
+    <Relation level="1" questionName="多选题" questionType="2">QuestionUnit.Base.MultiSelectUnit</Relation>
+    <Relation level="1" questionName="问答题" questionType="3">QuestionUnit.Base.SubjectiveUnit</Relation>
+  </Question>
+  <Question path="bin\QuestionUnit.Extend.dll">
+    <Relation level="1" questionName="评分题" questionType="4">QuestionUnit.Extend.ScoreUnit</Relation>
+    <Relation level="1" questionName="计分题" questionType="5">QuestionUnit.Extend.CumulationUnit</Relation>
+    <Relation level="1" questionName="统计题" questionType="6">QuestionUnit.Extend.StatisticsUnit</Relation>
+  </Question>
+</Assemblies>

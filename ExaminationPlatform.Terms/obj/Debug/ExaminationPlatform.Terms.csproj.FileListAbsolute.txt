@@ -1,0 +1,4 @@
+E:\MyProjects\ExaminationPlatform\ExaminationPlatform.Terms\bin\Debug\ExaminationPlatform.Terms.dll
+E:\MyProjects\ExaminationPlatform\ExaminationPlatform.Terms\bin\Debug\ExaminationPlatform.Terms.pdb
+E:\MyProjects\ExaminationPlatform\ExaminationPlatform.Terms\obj\Debug\ExaminationPlatform.Terms.dll
+E:\MyProjects\ExaminationPlatform\ExaminationPlatform.Terms\obj\Debug\ExaminationPlatform.Terms.pdb

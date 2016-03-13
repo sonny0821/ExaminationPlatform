@@ -1,0 +1,7 @@
+E:\Projects\Visual Studio 2013\Projects\ExamPlatformWeb-Master\UCADB\bin\Release\UCADB.dll
+E:\Projects\Visual Studio 2013\Projects\ExamPlatformWeb-Master\UCADB\bin\Release\UCADB.pdb
+E:\Projects\Visual Studio 2013\Projects\ExamPlatformWeb-Master\UCADB\bin\Release\TooFuns.Framework.dll
+E:\Projects\Visual Studio 2013\Projects\ExamPlatformWeb-Master\UCADB\bin\Release\TooFuns.Framework.pdb
+E:\Projects\Visual Studio 2013\Projects\ExamPlatformWeb-Master\UCADB\obj\Release\UCADB.csprojResolveAssemblyReference.cache
+E:\Projects\Visual Studio 2013\Projects\ExamPlatformWeb-Master\UCADB\obj\Release\UCADB.dll
+E:\Projects\Visual Studio 2013\Projects\ExamPlatformWeb-Master\UCADB\obj\Release\UCADB.pdb

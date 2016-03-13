@@ -1,0 +1,4 @@
+E:\MyProjects\ExaminationPlatform\ExaminationPlatform.Entities\bin\Debug\ExaminationPlatform.Entities.dll
+E:\MyProjects\ExaminationPlatform\ExaminationPlatform.Entities\bin\Debug\ExaminationPlatform.Entities.pdb
+E:\MyProjects\ExaminationPlatform\ExaminationPlatform.Entities\obj\Debug\ExaminationPlatform.Entities.dll
+E:\MyProjects\ExaminationPlatform\ExaminationPlatform.Entities\obj\Debug\ExaminationPlatform.Entities.pdb
